@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | The Clean Masters</title>
+</head>
+<body>
+    <header>
+        <a href="Home.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact Us.html">Contact Us</a>
+        <a href="FAQs.html">FAQs</a>
+
+        <h1>Service Booking</h1>
+    </header>
+
+    <section>
+        <h2>Make a One-Time Payment Booking</h2>
+        <p> Booking our cleaning services is quick and easy! Simply select the type of service you need, choose a convenient date and time, 
+            provide your contact details, and submit the form. Our team will then confirm your booking and arrive at your location at the 
+            scheduled time.
+        </p>
+        <h3>Booking Form:</h3>
+        <form action="booking_handler.php" method="POST">
+            <label for="service_type">Service Type:</label><br>
+            <select id="service_type" name="service_type">
+                <option value="residential">Residential Cleaning</option>
+                <option value="commercial">Commercial Cleaning</option>
+                <option value="deep">Deep Cleaning</option>
+                <option value="move_in_out">Move-In/Move-Out Cleaning</option>
+                <option value="post_construction">Post-Construction Cleaning</option>
+            </select><br><br>
+
+            <label for="booking_date">Booking Date:</label><br>
+            <input type="date" id="booking_date" name="booking_date"><br><br>
+
+            <label for="booking_time">Booking Time:</label><br>
+            <input type="time" id="booking_time" name="booking_time"><br><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <input type="submit" value="Submit Booking">
+        </form>
+    </section>
+<hr>
+    <footer>
+        <p>&copy; 2024 Cleaning Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

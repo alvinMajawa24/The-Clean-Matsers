@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe | The Clean Masters</title>
+</head>
+<body>
+    <header>
+        <a href="Home.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Services.html">Services</a>
+        <a href="Contact Us.html">Contact Us</a>
+        <a href="FAQs.html">FAQs</a>
+
+        <h1>Subscribe</h1>
+    </header>
+
+    <section>
+        <h2>Subscribe to Our Services</h2>
+        <p> Subscribe to our cleaning services and enjoy the convenience of regular cleaning tailored to your needs. Whether you need 
+            weekly touch-ups, bi-weekly maintenance, monthly deep cleans, or quarterly refreshers, we have subscription plans to suit 
+            your lifestyle and budget.
+        </p>
+        <p> Our subscription plans offer hassle-free scheduling, priority booking, and discounted rates compared to one-time bookings. 
+            You'll also benefit from consistent quality and peace of mind knowing that your space will always be clean and inviting.
+        </p>
+        <p> To subscribe, simply fill out the form below with your details and preferred subscription type. Once subscribed, our team 
+            will contact you to confirm the details and set up your recurring cleaning schedule.
+        </p>
+        <h3>Subscription Form:</h3>
+        <form action="subscription_handler.php" method="POST">
+            <label for="subscription_type">Subscription Type:</label><br>
+            <select id="subscription_type" name="subscription_type">
+                <option value="weekly">Weekly Subscription</option>
+                <option value="bi_weekly">Bi-Weekly Subscription</option>
+                <option value="monthly">Monthly Subscription</option>
+                <option value="quarterly">Quarterly Subscription</option>
+            </select><br><br>
+
+            <label for="subscription_name">Name:</label><br>
+            <input type="text" id="subscription_name" name="subscription_name"><br><br>
+
+            <label for="subscription_email">Email:</label><br>
+            <input type="email" id="subscription_email" name="subscription_email"><br><br>
+
+            <label for="subscription_phone">Phone:</label><br>
+            <input type="tel" id="subscription_phone" name="subscription_phone"><br><br>
+
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+<hr>
+    <footer>
+        <p>&copy; 2024 Cleaning Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>
